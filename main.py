@@ -10,7 +10,7 @@ import sys
 
 # ==================== ИНИЦИАЛИЗАЦИЯ ====================
 # Берем токен из переменных окружения (обязательно для Render)
-TOKEN = os.environ.get('TELEGRAM_TOKEN')
+TOKEN = os.environ.get('8502077315:AAFsAdWXuo_06YGCjwyAI11JbgCWH8Y3pso')
 if not TOKEN:
     print("❌ Ошибка: TELEGRAM_TOKEN не найден в переменных окружения!")
     print("Добавьте TELEGRAM_TOKEN в секцию Environment на Render")
@@ -619,4 +619,5 @@ if __name__ == '__main__':
 
     # Запускаем Flask-сервер для Render
     port = int(os.environ.get("PORT", 5000))
+
     app.run(host="0.0.0.0", port=port)
